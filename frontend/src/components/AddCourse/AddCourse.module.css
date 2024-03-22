@@ -1,0 +1,61 @@
+.container {
+  height: 100vh;
+	display: flex;
+  margin-top: 3rem; 
+	justify-content: center;
+}
+
+.courseform{
+	border: 2px solid #404e95b3;
+	padding: 2.5rem 0rem;
+	color: #15171b;
+	backdrop-filter: blur(20px);
+	border-radius: 1rem;
+	height: 28rem;
+  width: 25rem;
+}
+
+.courseform h2 {
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+
+.input_fields{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+.courseform input {
+	width: 18rem;
+	height: 50px;
+	border: none;
+	padding: 0 20px;
+	margin-bottom: 2rem;
+	border-radius: 20px;
+	letter-spacing: 1px;
+}
+
+.courseform input::placeholder{
+	letter-spacing: 2px;
+}
+
+.btn {
+	width: 60%;
+	height: 50px;
+	margin-top: 10px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	border: none;
+	background-image: linear-gradient(to right, #6900a7a8, #0076ef);
+	border-radius: 40px;
+	cursor: pointer;
+	transition: opacity .3s;
+}
+
+.btn:hover{
+	opacity: 0.7;
+}

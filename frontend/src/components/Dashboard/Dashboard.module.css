@@ -1,0 +1,87 @@
+.container{
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	position: relative;
+}
+
+.container img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	position: absolute;	
+}
+
+.sidebar{
+	position: sticky;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 255px;
+	height: 100vh;
+	border: 2px solid #404e95b3;
+	color: #15171b;
+	backdrop-filter: blur(20px);
+	border-radius: 15px;
+	margin: 10px;
+	padding: 0 1.7rem;
+	transition: all 0.5s linear;
+	overflow: hidden;
+}
+
+.institute_name{
+	margin: 20px 0;
+	text-align: center;
+	font-family: "Kaushan Script", cursive;
+	cursor: pointer;
+}
+
+.items{
+	height: 80%;
+	position: relative;
+	list-style: none;
+}
+
+.items li{
+	padding: 1rem;
+	margin: 33px 0 0 15px;
+	border-radius: 8px;
+	color: #000000;
+	cursor: pointer;
+}
+
+.items li:hover{
+	background-color: #79b1e9;
+	color: #1204cb;
+	margin-left: calc(1rem - 10px);
+}
+
+.items li span{
+	margin-left: 4px;
+}
+
+.items li:last-child{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.main{
+	position: relative;
+	width: 100%;
+	padding: 1rem;
+}
+
+.header{
+	border: 2px solid #404e95b3;
+	color: #15171b;
+	backdrop-filter: blur(20px);
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.header h2{
+	text-align: center;
+}
+.info{
+	width: 100%;
+}

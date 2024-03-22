@@ -1,0 +1,60 @@
+.outercontainer,
+input,
+button{
+	font-family: "Montserrat", sans-serif;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	position: absolute;	
+}
+
+.container {
+	position: relative;
+  height: 100vh;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+}
+
+.container h2 {
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 2rem;
+	margin-top: 5rem;
+}
+
+.title_btn{
+	position: relative;
+	border: 2px solid #ffffffb3;
+	padding: 2.5rem 0rem;
+	color: #ffffff;
+	backdrop-filter: blur(20px);
+	border-radius: 1rem;
+	height: 28rem;
+  width: 25rem;
+}
+
+.btn_container{
+ display: flex;
+ justify-content: space-between;
+}
+
+.btn_container button{
+	width: 40%;
+	height: 50px;
+	margin: 20px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	border: none;
+	background-image: linear-gradient(to right, #6900a7a8, #0076ef);
+	border-radius: 40px;
+	cursor: pointer;
+	transition: opacity .3s;
+}
+
+.btn_container button:hover{
+	opacity: 0.7;
+}

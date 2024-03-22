@@ -1,0 +1,83 @@
+.add_student_container{
+	margin-top: 1rem;
+	border-radius: 15px;
+	padding: 15px;
+	display: flex;
+	justify-content: end;
+}
+
+.add_student_container button{
+	background-color: #003affa6;
+	color: #ffffff;
+	border: none;
+	padding: 18px;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.student_data{
+	border: 2px solid #404e95b3;
+	color: #15171b;
+	backdrop-filter: blur(20px);
+	margin-top: 1rem;
+	border-radius: 15px;
+	padding: 15px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.table_container{
+	width: 100%;
+}
+
+.student_data h2{
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.student_data table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.student_data thead{
+	background: #3384d361;
+}
+
+.student_data th{
+	padding: 15px;
+}
+
+.student_data tbody{
+	background-color: #ebeaf5;
+}
+
+.student_data td{
+	padding: 15px;
+	color: #2e2c2c;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px
+}
+
+.student_data tr:nth-child(even){
+	background-color: #ffffff;
+}
+
+.student_data .edit{
+	color: #0071e1;
+	border: none;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 5px;
+	margin-right: 4px;
+}
+
+.student_data .delete{
+	color: #ff0000;
+	border: none;
+	font-size: 13px;
+	padding: 5px;
+	cursor: pointer;
+}

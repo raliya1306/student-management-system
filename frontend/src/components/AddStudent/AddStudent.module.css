@@ -1,0 +1,81 @@
+.container {
+  height: 100vh;
+	display: flex;
+  margin-top: 3rem; 
+	justify-content: center;
+}
+
+.studentform{
+	border: 2px solid #404e95b3;
+	padding: 1rem 0rem;
+	color: #3d3131;
+	backdrop-filter: blur(20px);
+	border-radius: 1rem;
+	height: 28rem;
+  width: 25rem;
+}
+
+.studentform h2 {
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 1.5rem;
+	margin-top: 0.2rem;
+	font-size: 20px;
+}
+
+.input_fields{
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+	align-items: center;
+}
+
+.studentform input {
+	width: 16rem;
+	height: 40px;
+	border: none;
+	padding: 0 20px;
+	margin-bottom: 1rem;
+	border-radius: 20px;
+	letter-spacing: 1px;
+	color: #3d3131;
+	font-weight: 500;
+}
+
+.studentform input::placeholder{
+	letter-spacing: 2px;
+}
+.studentform label{
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+.studentform select{
+	width: 16rem;
+	height: 40px;
+	border: none;
+	padding: 0 20px;
+	margin-bottom: 1.5rem;
+	border-radius: 20px;
+	letter-spacing: 2px;
+	color: #3d3131;
+	font-weight: 500;
+	font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+	width: 60%;
+	height: 50px;
+	margin-top: 6px;
+	letter-spacing: 3px;
+	font-weight: 700;
+	border: none;
+	background-image: linear-gradient(to right, #6900a7a8, #0076ef);
+	border-radius: 40px;
+	cursor: pointer;
+	transition: opacity .3s;
+}
+
+.btn:hover{
+	opacity: 0.7;
+}
