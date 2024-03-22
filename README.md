@@ -54,3 +54,13 @@ The student management system should be running at
 ```sh
 https://localhost:5173
 ```
+
+Email and password that can be used to test the application deployed on render.com
+
+Admin
+- Email: admin1@gmail.com
+- Password: 12345
+
+Student
+- Email: drake56@gmail.com
+- Password: 12345
