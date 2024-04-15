@@ -1,9 +1,3 @@
-.outercontainer,
-input,
-button{
-	font-family: "Montserrat", sans-serif;
-}
-
 img {
 	width: 100%;
 	height: 100%;
@@ -12,6 +6,9 @@ img {
 }
 
 .container {
+  width: 100%;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
 	position: relative;
   height: 100vh;
 	display: flex;
@@ -20,14 +17,19 @@ img {
 }
 
 .loginform{
-	position: relative;
+	/* position: relative; */
 	border: 2px solid #ffffffb3;
 	padding: 2.5rem 0rem;
 	color: #ffffff;
 	backdrop-filter: blur(20px);
 	border-radius: 1rem;
-	height: 28rem;
-  width: 25rem;
+	/* height: 28rem;
+  width: 25rem; */
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .loginform .error_message{
@@ -37,31 +39,42 @@ img {
 }
 
 .loginform h2 {
+  font-size: 1.5rem;
 	text-align: center;
 	letter-spacing: 2px;
-	margin-bottom: 2rem;
-	margin-top: 1rem;
+	margin-bottom: 3.5rem;
+	/* margin-top: 1rem; */
 }
 
 .input_fields{
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 2.5rem;
 	align-items: center;
+  height: 250px;
+}
+
+.input_field{
+  height: 13%;
+  width: 60%;
 }
 
 .loginform input {
-	width: 18rem;
-	height: 50px;
+  height: 100%;
+  width: 100%;
 	border: none;
 	padding: 0 20px;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
 	border-radius: 20px;
 	letter-spacing: 1px;
 }
 
 .loginform input::placeholder{
 	letter-spacing: 2px;
+}
+
+.loginform input:focus{
+  outline: none;
 }
 
 .btn {
@@ -79,4 +92,26 @@ img {
 
 .btn:hover{
 	opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .loginform{
+    width: 70%;
+  }
+  .loginform h2{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .loginform{
+    width: 90%;
+  }
+  .loginform input::placeholder{
+    font-size: 12px;
+  }
+  .btn {
+    height: 35px;
+    letter-spacing: 2px;    
+  }
 }

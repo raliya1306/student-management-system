@@ -1,28 +1,36 @@
+.student_container{
+  background-color: #5fceff24;
+}
+
 .add_student_container{
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 	border-radius: 15px;
-	padding: 15px;
+	padding: 1rem;
 	display: flex;
 	justify-content: end;
 }
 
 .add_student_container button{
-	background-color: #003affa6;
+	background-color: #0a77fe;
 	color: #ffffff;
 	border: none;
-	padding: 18px;
-	border-radius: 10px;
+	padding: 1rem;
+	border-radius: 25px;
 	letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 0.8rem;
 	cursor: pointer;
 }
 
 .student_data{
-	border: 2px solid #404e95b3;
+	border: 1.5px solid #404e95b3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 	color: #15171b;
+  background-color: #ffffff;
 	backdrop-filter: blur(20px);
-	margin-top: 1rem;
+	margin: 1rem;
 	border-radius: 15px;
-	padding: 15px;
+	padding: 1rem;
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -37,7 +45,7 @@
 
 .student_data table {
 	width: 100%;
-	border-collapse: collapse;
+	/* border-collapse: collapse; */
 }
 
 .student_data thead{
@@ -45,7 +53,7 @@
 }
 
 .student_data th{
-	padding: 15px;
+	padding: 1rem;
 }
 
 .student_data tbody{
@@ -53,10 +61,10 @@
 }
 
 .student_data td{
-	padding: 15px;
+	padding: 1rem;
 	color: #2e2c2c;
 	text-align: center;
-	font-size: 14px;
+	font-size: 0.8rem;
 	font-weight: 600;
 	letter-spacing: 1px
 }

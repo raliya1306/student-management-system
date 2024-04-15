@@ -13,11 +13,11 @@ const Student = () => {
       .then(result => {
         setStudents(result.data.Result)
       })
-      .catch(err =>  console.log(err))
+      .catch(err => console.log(err))
   }, [])
 
   const handleDelete = (id) => {
-    axios.delete('/api/adminlogin/delete_student/'+id)
+    axios.delete('/api/adminlogin/delete_student/' + id)
       .then(result => {
         window.location.reload()
       })
@@ -25,7 +25,7 @@ const Student = () => {
   }
 
   return (
-    <>
+    <div className={styles.student_container}>
       <div className={styles.add_student_container}>
         <Link to='/dashboard/add_student'>
           <button>Add Student</button>
@@ -54,7 +54,7 @@ const Student = () => {
                   <td>{s.course_name}</td>
                   <td>{s.marks}</td>
                   <td>
-                    <Link to={'/dashboard/edit_student/'+s.id}>
+                    <Link to={'/dashboard/edit_student/' + s.id}>
                       <button className={styles.edit}>Edit</button>
                     </Link>
                     <button className={styles.delete} onClick={() => handleDelete(s.id)}>Delete</button>
@@ -65,7 +65,7 @@ const Student = () => {
           </table>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

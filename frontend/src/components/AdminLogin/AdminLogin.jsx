@@ -27,25 +27,23 @@ const AdminLogin = () => {
   }
 
   return (
-    <div className={styles.outercontainer}>
-      <div className={styles.container}>
-        <img src='/background.jpeg' />
-        <form className={styles.loginform} onSubmit={handleSubmit}>
-          <div className={styles.error_message}>
-            {error && error}
+    <div className={styles.container}>
+      <img src='/background.jpeg' />
+      <form className={styles.loginform} onSubmit={handleSubmit}>
+        <div className={styles.error_message}>
+          {error && error}
+        </div>
+        <h2>ADMIN LOGIN</h2>
+        <div className={styles.input_fields}>
+          <div className={styles.input_field}>
+            <input className={styles.input_box} type='email' name='email' autoComplete='off' placeholder='Email' onChange={(e) => setValues({ ...values, email: e.target.value })} />
           </div>
-          <h2>ADMIN LOGIN</h2>
-          <div className={styles.input_fields}>
-            <div className={styles.input_field}>
-              <input className={styles.input_box} type='email' name='email' autoComplete='off' placeholder='Email' onChange={(e) => setValues({ ...values, email : e.target.value })} />
-            </div>
-            <div className={styles.input_field}>
-              <input className={styles.input_box}type='password' name='password' autoComplete='off' placeholder='Password' onChange={(e) => setValues({ ...values, password : e.target.value })} />
-            </div>
-            <button className={styles.btn}>LOGIN</button>
+          <div className={styles.input_field}>
+            <input className={styles.input_box} type='password' name='password' autoComplete='off' placeholder='Password' onChange={(e) => setValues({ ...values, password: e.target.value })} />
           </div>
-        </form>
-      </div>
+          <button className={styles.btn}>LOGIN</button>
+        </div>
+      </form>
     </div>
   )
 }

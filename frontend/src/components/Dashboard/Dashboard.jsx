@@ -22,9 +22,9 @@ const Dashboard = () => {
   return (
     <>
       <div className={styles.container}>
-        <img src='/background1.jpeg' />
+        {/* <img src='/background1.jpeg' /> */}
         <div className={styles.sidebar}>
-          <Link to='/dashboard'><h1 className={styles.institute_name}>CSI</h1></Link>
+          <Link to='/dashboard'><h1 className={styles.institute_name}>Tutorific</h1></Link>
           <ul className={styles.items}>
             <li>
               <Link to='/dashboard'>
@@ -49,6 +49,7 @@ const Dashboard = () => {
         <div className={styles.main}>
           <div className={styles.header}>
             <h2>Student Management System</h2>
+            <hr/>
           </div>
           <Outlet />
         </div>
