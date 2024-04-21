@@ -1,6 +1,7 @@
-.student_container{
+/* .student_container{
   background-color: #5fceff24;
-}
+  height: 100vh;
+} */
 
 .add_student_container{
 	/* margin-top: 1rem; */
@@ -14,8 +15,8 @@
 	background-color: #0a77fe;
 	color: #ffffff;
 	border: none;
-	padding: 1rem;
-	border-radius: 25px;
+	padding: 0.7rem;
+	border-radius: 0.5rem;
 	letter-spacing: 2px;
   font-weight: 500;
   font-size: 0.8rem;
@@ -44,7 +45,9 @@
 }
 
 .student_data table {
-	width: 100%;
+  table-layout: fixed;
+  /* width: 100%; */
+	/* width: 100%; */
 	/* border-collapse: collapse; */
 }
 
@@ -66,7 +69,32 @@
 	text-align: center;
 	font-size: 0.8rem;
 	font-weight: 600;
-	letter-spacing: 1px
+	letter-spacing: 1px;
+  word-wrap: break-word;
+}
+
+.student_data th:nth-child(1){
+  width: 3rem;
+}
+
+.student_data th:nth-child(2){
+  width: 7rem;
+}
+
+.student_data th:nth-child(3){
+  width: 18rem;
+}
+
+.student_data th:nth-child(4){
+  width: 8rem;
+}
+
+.student_data th:nth-child(5){
+  width: 6rem;
+}
+
+.student_data th:nth-child(6){
+  width: 6rem;
 }
 
 .student_data tr:nth-child(even){
@@ -88,4 +116,61 @@
 	font-size: 13px;
 	padding: 5px;
 	cursor: pointer;
+}
+
+.mobile_table{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .table_container thead{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .table_container td{
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .table_title{
+    margin: 0.5rem 0;   
+  }
+  .table_container {
+    display: none;
+  }
+  .add_student_container button{
+    width: 9rem;
+    font-size: 0.6rem;
+  }
+  .mobile_table{
+    display: block;
+    border: #b5b5b5 solid 1px;
+    border-bottom: none;
+  }
+  .mobile_table:last-child{
+    border-bottom: #b5b5b5 solid 1px;
+  }
+  .top{
+    border-bottom: #d3d3d3 solid 1px;
+    display: flex;
+  }
+  .id{
+    border-right: #d3d3d3 solid 1px;
+    padding: 1rem;
+  }
+  .name_email{
+    border-right: #d3d3d3 solid 1px;
+    padding: 1rem;
+  }
+  .name_email .email{
+    color: #a8a7a7;
+  }
+  .btns{
+    padding: 1rem;
+  }
+  .bottom{
+     padding: 1rem 8rem;
+  }
 }

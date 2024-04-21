@@ -28,7 +28,7 @@ const Student = () => {
     <div className={styles.student_container}>
       <div className={styles.add_student_container}>
         <Link to='/dashboard/add_student'>
-          <button>Add Student</button>
+          <button>+ NEW STUDENT</button>
         </Link>
       </div>
       <div className={styles.student_data}>
@@ -64,6 +64,29 @@ const Student = () => {
             </tbody>
           </table>
         </div>
+        {
+          students.map(s =>
+            <div className={styles.mobile_table} key={s.id}>
+              <div className={styles.top}>
+                <div className={styles.id}>{s.id}</div>
+                <div className={styles.name_email}>
+                  <div>{s.name} </div>
+                  <div className={styles.email}> {s.email} </div> </div>
+                <div className={styles.btns}>
+                  <Link to={'/dashboard/edit_student/' + s.id}>
+                    <button className={styles.edit}>Edit</button>
+                  </Link>
+                  <button className={styles.delete} onClick={() => handleDelete(s.id)}>Delete</button>
+                </div>
+              </div>
+              <div className={styles.bottom}>
+                <div className={styles.course}>{s.course_name}</div>
+                <div className={styles.marks}>{s.marks}</div>
+              </div>
+            </div>
+          )
+        }
+
       </div>
     </div>
   )

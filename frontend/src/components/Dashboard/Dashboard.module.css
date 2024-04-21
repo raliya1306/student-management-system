@@ -1,43 +1,80 @@
 .container{
 	font-family: "Poppins", sans-serif;
-	display: flex;
-  /* display: grid;
-  grid-template-columns: 1fr 5fr; */
-	/* position: relative; */
-  /* background-color: #000000; */
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 1fr;
 }
 
-/* .container img {
-	width: 100%;
-	height: 100%;
-	object-fit: fill;
-	position: absolute;
-} */
+.sidebar img {
+  width: 31px;
+  height: 24px;
+}
 
 .sidebar{
 	position: sticky;
 	top: 0;
 	left: 0;
 	bottom: 0;
-  width: 250px;
-	/* width: 255px;*/
-	/* height: 100vh;  */
 	border-right: 1.5px solid #404e95b3;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	color: #15171b;
-	/* backdrop-filter: blur(20px); */
-	/* border-radius: 15px;
-	margin: 10px; */
 	padding: 0 0.8rem;
 	transition: all 0.5s linear;
 	overflow: hidden;
 }
 
+.menuIcon{
+  display: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+.menu{
+  width: 30%;
+  height: 100vh;
+  top: 0px;
+  left: -200%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 4rem;
+  background-color: #FFFFFF;
+  color: #100C08;
+}
+
+.menuActive{
+  width: 30%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 4rem; 
+  background-color: #FFFFFF;
+  color: #100C08;
+  z-index: 999;
+}
+
+li{
+  list-style: none;
+}
+
+.homeAndIcon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuActive span, .menu span{
+  padding-left: 0.5rem;
+}
+
 .institute_name{
 	/* margin: 20px 0; */
-  margin: 2rem 0;
-	text-align: center;
+  margin: 2rem 0.5rem;
+	/* text-align: center; */
 	font-family: "Kaushan Script", cursive;
 	cursor: pointer;
 }
@@ -51,8 +88,9 @@
 .items li{
 	/* padding: 2rem 1rem;
 	margin: 33px 0 0 15px; */
-  padding: 1rem 2.5rem;
-  margin-bottom: 1rem;
+  /* padding: 1rem 2.5rem; */
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 	border-radius: 25px;
   font-size: 1rem;
 	color: #000000;
@@ -77,8 +115,10 @@
 
 .main{
 	position: relative;
-	width: 100%;
+	/* width: 100%; */
+  background-color: #5fceff24;
 	/* padding: 1rem; */
+  /* width: auto; */
 }
 
 .header{
@@ -86,13 +126,16 @@
 	color: #15171b;
 	/* backdrop-filter: blur(20px); */
   box-shadow: rgba(60, 64, 67, 0) 0px 1px 2px 0px, #3c404326 0px 2px 6px 0px;
+  position: relative;
+  background-color: #ffffff;
 	/* border-radius: 15px; */
 	/* padding: 1rem; */
 }
 
 .header h2{
 	text-align: center;
-  margin: 1rem 0;
+  padding: 1rem 0;
+  /* background-color: #ffffff; */
 }
 
 .header hr{
@@ -100,16 +143,40 @@
   border-bottom: 0.5px solid #404e95b3; 
 }
 
-.info{
-	width: 100%;
+@media (max-width: 768px) {
+  .container{
+    display: block;
+  }
+  .main{
+    height: 100vh;
+  }
+  .items{
+    display: none;
+  }
+  .institute_name{
+    display: none;
+  }
+  .header{
+    height: 3rem;
+    /* display: grid;
+    grid-template-columns: 1fr 3fr; */
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  .header h2{
+    display: inline;
+    padding-right: 6rem;
+  }
+  .menuIcon{
+    display: inline;
+    padding: 1rem;
+  }
 }
 
-@media (max-width: 990px) {
-  .sidebar{
-    padding: 0 0.3rem;
-  }
-  .items li{
-    margin-bottom: 2rem;
-    padding: 1rem 1rem;
+@media (max-width: 620px) {
+  .header h2{
+    padding: 0.5rem;
+    font-size: 1.2rem;
   }
 }
